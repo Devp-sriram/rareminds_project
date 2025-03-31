@@ -1,4 +1,4 @@
-***backend for rareminds shortlisting task***
+**backend for rareminds shortlisting task**
 
 **you need a api testing tool like postman or httpie , cause it's only the backend**
 
@@ -14,11 +14,10 @@
 ```bash
    git clone https://github.com/Devp-sriram/rareminds_project
 ```
-Navigate to project directory:
+Installing the dependencies:
 
 ```bash
 npm install
-Running the App
 ```
 Start development server:
 
