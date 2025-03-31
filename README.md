@@ -1,6 +1,6 @@
-**backend for rareminds shortlisting task**
+***backend for rareminds shortlisting task***
 
-*you need a api testing tool like postman or httpie , cause it's only the backend*
+**you need a api testing tool like postman or httpie , cause it's only the backend**
 
 
 ## Getting Started
