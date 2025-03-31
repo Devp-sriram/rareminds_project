@@ -1,4 +1,4 @@
-**backend for rareminds shortlisting task**
+### backend for rareminds shortlisting task
 
 **you need a api testing tool like postman or httpie , cause it's only the backend**
 
@@ -10,27 +10,27 @@
 - npm v9+
 
 ### Installation
-1. Clone the repository:
+# Clone the repository:
 ```bash
    git clone https://github.com/Devp-sriram/rareminds_project
 ```
-Installing the dependencies:
+# Installing the dependencies:
 
 ```bash
 npm install
 ```
-Start development server:
+# Start development server:
 
 ```bash
 npm run dev
 ```
 
-Open your browser at:
+# Open your postman / browser at:
 ```bash
 http://localhost:4000
 ```
 
-.env files:
+# .env files:
 ```bash
 MONGODB_URL = 'you mongo db cluster uri'
 NODE_MAILER_USER = 'nodemailer id refer nodemailer npm'
@@ -40,15 +40,13 @@ login_secret_token = 'jwt login secert key use google keys'
 BACKEND_URL = http://localhost:4000 || 'or hosted api url'
 ```
 
-head over to postman 
-
-and create a post request put this on search bar:
+# head over to postman and create a post request put this on search bar:
 
 ```bash
 http://localhost:4000/signin/verify
 ```
 
-and give a body of raw data in json fmt:
+# and give a body of raw data in json fmt:
 ```bash
 {
     "name" : "lawrance",
@@ -56,8 +54,7 @@ and give a body of raw data in json fmt:
     "password": "Lawrance@110"
 }
 ```
-and hit send , then you get 200 response
-check you mail you will receive a mail with token like this 
+# and hit send , then you get 200 response check you mail you will receive a mail with token like this 
 ```bash
 hi,there
 welcome to app
@@ -70,9 +67,9 @@ Team
 ```
 
 
-click the link then your account get validated
+# click the link then your account get validated
 
-you see a page like this and receive a mail
+# you see a page like this and receive a mail
 ```bash
 registration sucess
 welcome to app
@@ -84,15 +81,15 @@ Team
 ```
 
 
-you have succesful signed yourself up 
+# you have succesfully signed yourself up 
 
-now login with
-
-post request
+# now login with post request
 
 ```bash
 http://localhost:4000/login
 ```
 
-you get a response of 
+# you will get a response of
+```bash
 'succesfully signined as (your name)'
+```
