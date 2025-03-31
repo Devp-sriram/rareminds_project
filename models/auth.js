@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const authscheme = new mongoose.schema(
+const authscheme = new mongoose.Schema(
   {
     name : {
       type:String
