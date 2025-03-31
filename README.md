@@ -37,7 +37,7 @@ NODE_MAILER_USER = 'nodemailer id refer nodemailer npm'
 NODE_MAILER_PASS = 'nodemailer pw'
 signup_Secret_Token = 'jwt signup secert key'
 login_secret_token = 'jwt login secert key use google keys'
-BACKEND_URL = https://localhost:4000 || 'or hosted api url'
+BACKEND_URL = http://localhost:4000 || 'or hosted api url'
 ```
 
 head over to postman 
@@ -57,5 +57,29 @@ and give a body of raw data in json fmt:
 }
 ```
 and hit send , then you get 200 response
-check you mail you will receive a mail with token
+check you mail you will receive a mail with token like this 
+```bash
+hi,there
+welcome to app
+thankyou for signinup click the below link to activate
+
+clink here
+regrads
+
+Team
+```
+
+
+click the link then your account get validated
+
+you see a page like this and receive a mail
+```bash
+registration sucess
+welcome to app
+you're registration succesful
+
+regrads
+
+Team
+```
 ```

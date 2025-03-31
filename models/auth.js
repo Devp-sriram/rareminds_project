@@ -11,9 +11,6 @@ const authscheme = new mongoose.Schema(
     password:{
       type:String,
     },
-    token: {
-      type: String,
-    },
   },{
     collection : 'auth'
   }

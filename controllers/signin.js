@@ -50,7 +50,6 @@ export async function InsertSignupUser(token){
       name:userVerify.name,
       email:userVerify.email,
       password:userVerify.password,
-      forgetPassword:{}
     });
 
     await newUser.save();
@@ -71,7 +70,7 @@ export async function InsertSignupUser(token){
   }
   return`<h4>registration failed</h4>
   <h5> link  is expired......</h5>
-  <P>you're registration succesful</p>
+  <P>you're registration failed</p>
   <p>regrads</p>
   <P>Team</p>`;
   }catch(error){
@@ -80,7 +79,7 @@ export async function InsertSignupUser(token){
               <body>
               <h4>registration failed</h4>
               <h5> link  is expired......</h5>
-              <P>you're registration succesful</p>
+              <P>you're registration failed</p>
               <p>regrads</p>
               <P>Team</p>
               </body>
