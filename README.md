@@ -1,9 +1,9 @@
-### backend for rareminds shortlisting task
+# backend for rareminds shortlisting task
 
 **you need a api testing tool like postman or httpie , cause it's only the backend**
 
 
-## Getting Started
+# Getting Started
 
 ### Prerequisites
 - Node.js v18+
@@ -88,6 +88,14 @@ Team
 
 ```bash
 http://localhost:4000/login
+```
+
+# json body
+```bash
+{
+    "email" : "sriramraman100@gmail.com",
+    "password": "Lawrance@110"
+}
 ```
 
 # you will get a response of
