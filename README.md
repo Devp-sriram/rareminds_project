@@ -30,3 +30,14 @@ Open your browser at:
 http://localhost:4000
 ```
 
+.env files:
+```bash
+MONGODB_URL = 'you mongo db cluster uri'
+NODE_MAILER_USER = 'nodemailer id refer nodemailer npm'
+NODE_MAILER_PASS = 'nodemailer pw'
+signup_Secret_Token = 'jwt signup secert key'
+login_secret_token = 'jwt login secert key use google keys'
+BACKEND_URL = https://localhost:4000 || 'or hosted api url'
+```
+
+```
