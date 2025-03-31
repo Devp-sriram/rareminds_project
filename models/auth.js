@@ -3,13 +3,13 @@ import mongoose from "mongoose";
 const authscheme = new mongoose.schema(
   {
     name : {
-      type:string
+      type:String
     },
     email :{
-      type:string,
+      type:String,
     },
     password:{
-      type:string,
+      type:String,
     },
     token: {
       type: String,

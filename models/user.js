@@ -6,10 +6,6 @@ const taskscheme = new mongoose.Schema(
       type :String,
       required :true,
     },
-    assigner:{
-      type :String,
-      required :true,
-    },
     title: {
       type:String,
       required : true,
@@ -43,5 +39,5 @@ const userscheme = new mongoose.Schema(
   }
 )
 
-export default mongoose.model('manage',userscheme);
+export default mongoose.model('manage',managerscheme);
 

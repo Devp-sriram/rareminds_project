@@ -1,6 +1,6 @@
 import mongoose from 'mongoose'
 
-const verifySchema =new mongoose.Schema(
+const verifySchema = new mongoose.Schema(
     {
         name:{
             type:String,
