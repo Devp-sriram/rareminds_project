@@ -17,12 +17,13 @@
 # Installing the dependencies:
 
 ```bash
+cd rareminds_project
 npm install
 ```
 # Start development server:
 
 ```bash
-npm run dev
+npm start
 ```
 
 # Open your postman / browser at:
