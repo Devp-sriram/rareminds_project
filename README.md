@@ -40,4 +40,22 @@ login_secret_token = 'jwt login secert key use google keys'
 BACKEND_URL = https://localhost:4000 || 'or hosted api url'
 ```
 
+head over to postman 
+
+and create a post request put this on search bar:
+
+```bash
+http://localhost:4000/signin/verify
+```
+
+and give a body of raw data in json fmt:
+```bash
+{
+    "name" : "lawrance",
+    "email" : "sriramraman100@gmail.com",
+    "password": "Lawrance@110"
+}
+```
+and hit send , then you get 200 response
+check you mail you will receive a mail with token
 ```
