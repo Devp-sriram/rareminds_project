@@ -82,4 +82,17 @@ regrads
 
 Team
 ```
+
+
+you have succesful signed yourself up 
+
+now login with
+
+post request
+
+```bash
+http://localhost:4000/login
 ```
+
+you get a response of 
+'succesfully signined as (your name)'

@@ -24,7 +24,7 @@ export async function CheckUser(email) {
 
 export async function authenticateUser(email, password){
     try{
-        const userCheck = await User.findOne({email})
+        const userCheck = await Auth.findOne({email})
         if(userCheck){
           const validPassword = await bcrypt.compare( password , userCheck.password)  
           if(validPassword){
@@ -36,15 +36,13 @@ export async function authenticateUser(email, password){
                 token:token,
                 status:true,
             }
-          
-        await client.set(`key-${email}`, JSON.stringify(response)) 
-           
-        await User.findOneAndUpdate(
-            {email:userCheck.email},
-            {$set:{token:token}},
-            {new:true}
-        );
-        return response;
+ 
+            await Auth.findOneAndUpdate(
+              {email:userCheck.email},
+              {$set:{token:token}},
+              {new:true}
+            );
+            return response;
           }else{return 'invalid password'}
         }else{ 
             return 'invalid username'
@@ -61,11 +59,7 @@ export async function autharizeUser(token){
         const decodedToken =await jwt.verify( token , process.env.login_secret_token)
         if(decodedToken){
             const email = decodedToken.email;
-            const auth = await client.get(`key-${email}`);
-            if(auth){
-                const data = JSON.parse(auth)
-                return data 
-            }else{
+            if(email){
                 const data = await User.findOne({ email : email})
                 return data
             }
